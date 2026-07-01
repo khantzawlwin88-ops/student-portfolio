@@ -3,130 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
-
+    <title>Computer Science Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">&lt;/Portfolio&gt;</h2>
+    <!-- Header/Nav -->
+    <header>
+        <div class="logo">&lt;/Portfolio&gt;</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Student Portfolio</h1>
+            <p>Welcome to our Computer Science portfolio website. Meet our team, explore our skills, and view our projects.</p>
+            <a href="#team" class="btn-hero">Meet Our Team</a>
+        </div>
+        <!-- You can add a geometric background here via CSS -->
+    </section>
 
-<section id="home" class="hero">
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-container">
+            <!-- Member 1: Khant -->
+            <div class="team-card">
+                <img src="images/khant.jpg" alt="Khant Zaw Lwin">
+                <h3>KHANT ZAW LWIN</h3>
+                <p>Computer Science Student</p>
+                <a href="khantzaw.html" class="btn-view">View Profile</a>
+            </div>
+            <!-- Member 2: Daniel -->
+            <div class="team-card">
+                <img src="images/daniel.jpg" alt="Daniel">
+                <h3>DANIEL</h3>
+                <p>Computer Science Student</p>
+                <a href="daniel.html" class="btn-view">View Profile</a>
+            </div>
+            <!-- Member 3: S Win -->
+            <div class="team-card">
+                <img src="images/swinmyat.jpg" alt="S Win Myat Aung">
+                <h3>S WIN MYAT AUNG</h3>
+                <p>Computer Science Student</p>
+                <a href="swinmyat.html" class="btn-view">View Profile</a>
+            </div>
+        </div>
+    </section>
 
-    <h1>Student Portfolio</h1>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>khantzawlwin...@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>09785372681</p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <p>github.com/khantzawlwin88-ops</p>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        Welcome to our Computer Science portfolio website.
-        Meet our team, explore our skills, and view our projects.
-    </p>
-
-    <a href="#team" class="btn">Meet Our Team</a>
-
-</section>
-
-<section id="team">
-
-<h2 class="title">Our Team</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<div class="avatar">👨‍💻</div>
-
-<h3>KHANT ZAW LWIN</h3>
-
-<p>Computer Science Student</p>
-
-<a href="member/khantzaw.html" class="btn-card">
-View Portfolio
-</a>
-
-</div>
-
-<div class="card">
-
-<div class="avatar">👨‍💻</div>
-
-<h3>DANIEL</h3>
-
-<p>Computer Science Student</p>
-
-<a href="member/daniel.html" class="btn-card">
-View Portfolio
-</a>
-
-</div>
-
-<div class="card">
-
-<div class="avatar">👨‍💻</div>
-
-<h3>S WIN MYAT AUNG</h3>
-
-<p>Computer Science Student</p>
-
-<a href="member/swinmyat.html" class="btn-card">
-View Portfolio
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="title">Contact Us</h2>
-
-<div class="contact-box">
-
-<p><strong>Email</strong></p>
-<p>khantzawlwin88@gmail.com</p>
-<p>daneilvan05@gmail.com</p>
-<p>danielaung271099@gmail.com</p>
-
-<br>
-
-<p><strong>Phone</strong></p>
-<p>09785372681</p>
-<p>09251286186</p>
-<p>09785714661</p>
-
-<br>
-
-<p><strong>GitHub</strong></p>
-<p>
-https://github.com/khantzawlwin88-ops/student-portfolio
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-© 2026 Student Portfolio | UNIMY Computer Science Students
-</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Computer Science Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

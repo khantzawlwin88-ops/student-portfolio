@@ -1,20 +1,12 @@
-// Smooth fade-in animation
-const cards = document.querySelectorAll(".card");
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
+// Smooth Scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-}, {
-    threshold: 0.2
 });
 
-cards.forEach((card) => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-    card.style.transition = "all 0.6s ease";
-    observer.observe(card);
-});
+// Simple Alert when clicking "View Profile" (Optional)
+console.log("Portfolio Loaded Successfully!");
