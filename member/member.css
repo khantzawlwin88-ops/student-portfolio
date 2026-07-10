@@ -1,0 +1,302 @@
+/* ===================================
+   MEMBER PORTFOLIO STYLE
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:linear-gradient(135deg,#0d1117,#111827,#0d1117);
+}
+
+.grid{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:40px 40px;
+}
+
+.glow{
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.35;
+}
+
+.glow1{
+    background:#00ff99;
+    top:-80px;
+    left:-80px;
+}
+
+.glow2{
+    background:#00c3ff;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-avatar{
+    width:140px;
+    height:140px;
+    margin:auto;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    border:2px solid #00ff99;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    color:#00ff99;
+    box-shadow:0 0 25px rgba(0,255,153,.4);
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:3rem;
+}
+
+.hero-subtitle{
+    margin-top:10px;
+    color:#bdbdbd;
+    font-size:1.1rem;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.card{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#00ff99;
+    box-shadow:0 0 25px rgba(0,255,153,.25);
+}
+
+.card h2{
+    color:#00ff99;
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+.card h2 i{
+    margin-right:10px;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#fff;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    padding:12px 22px;
+    border-radius:30px;
+    background:rgba(0,255,153,.12);
+    border:1px solid rgba(0,255,153,.4);
+    color:#00ff99;
+    font-weight:600;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#00ff99;
+    color:#111;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#00ff99;
+    color:#111;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 20px rgba(0,255,153,.5);
+}
+
+.btn-outline{
+    border:2px solid #00ff99;
+    color:#00ff99;
+}
+
+.btn-outline:hover{
+    background:#00ff99;
+    color:#111;
+}
+/* ==========================
+   INFO
+========================== */
+
+.info p{
+    margin-bottom:12px;
+}
+
+/* ==========================
+   ICONS
+========================== */
+
+.card i{
+    color:#00ff99;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00ff99;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+.hero,
+.card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero-subtitle{
+        font-size:1rem;
+    }
+
+    .profile-avatar{
+        width:110px;
+        height:110px;
+        font-size:45px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:220px;
+        text-align:center;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .card h2{
+        font-size:1.5rem;
+    }
+
+    .skills{
+        justify-content:center;
+    }
+}

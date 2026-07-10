@@ -1,132 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
 
+    <title>Team Portfolio | UNIMY</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">&lt;/Portfolio&gt;</h2>
+    <!--================ NAVBAR ================-->
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Background Effects -->
+    <div class="background">
+        <div class="grid"></div>
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+    </div>
 
-<section id="home" class="hero">
+    <header class="header">
 
-    <h1>Student Portfolio</h1>
+        <nav class="navbar">
 
-    <p>
-        Welcome to our Computer Science portfolio website.
-        Meet our team, explore our skills, and view our projects.
-    </p>
+            <h2 class="logo">Team Portfolio</h2>
 
-    <a href="#team" class="btn">Meet Our Team</a>
+            <ul class="nav-links">
 
-</section>
+                <li><a href="#home">Home</a></li>
 
-<section id="team">
+                <li><a href="#about">About</a></li>
 
-<h2 class="title">Our Team</h2>
+                <li><a href="#education">Education</a></li>
 
-<div class="cards">
+                <li><a href="#skills">Skills</a></li>
 
-<div class="card">
+                <li><a href="#projects">Projects</a></li>
 
-<div class="avatar">👨‍💻</div>
+                <li><a href="#team">Team</a></li>
 
-<h3>KHANT ZAW LWIN</h3>
+                <li><a href="#contact">Contact</a></li>
 
-<p>Computer Science Student</p>
+            </ul>
 
-<a href="member/khantzaw.html" class="btn-card">
-View Portfolio
-</a>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-</div>
+        </nav>
 
-<div class="card">
+    </header>
 
-<div class="avatar">👨‍💻</div>
+    <!--================ HERO ================-->
 
-<h3>DANIEL</h3>
+    <section class="hero" id="home">
 
-<p>Computer Science Student</p>
+        <div class="hero-content">
 
-<a href="member/daniel.html" class="btn-card">
-View Portfolio
-</a>
+            <p class="hero-subtitle">
+                First-Year Computer Science Students at UNIMY
+            </p>
 
-</div>
+            <h1>
+                Building Modern
+                <span>Web Experiences</span>
+            </h1>
 
-<div class="card">
+            <p class="hero-description">
 
-<div class="avatar">👨‍💻</div>
+                Welcome to our professional team portfolio.
+                We are passionate Computer Science students
+                who enjoy building modern websites, learning
+                new technologies, and solving real-world problems.
 
-<h3>S WIN MYAT AUNG</h3>
+            </p>
 
-<p>Computer Science Student</p>
+            <div class="hero-buttons">
 
-<a href="member/swinmyat.html" class="btn-card">
-View Portfolio
-</a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fa-solid fa-globe"></i>
+                    Live Demo
+                </a>
 
-</div>
+                <a href="https://github.com/khantzawlwin88-ops/student-portfolio"
+                    target="_blank"
+                    class="btn btn-outline">
 
-</div>
+                    <i class="fa-brands fa-github"></i>
+                    Source Code
 
-</section>
+                </a>
 
-<section id="contact">
+            </div>
+<div class="hero-stats">
 
-<h2 class="title">Contact Us</h2>
+    <div class="stat">
+        <h2>3+</h2>
+        <p>Team Members</p>
+    </div>
 
-<div class="contact-box">
+    <div class="stat">
+        <h2>1</h2>
+        <p>Portfolio Project</p>
+    </div>
 
-<p><strong>Email</strong></p>
-<p>khantzawlwin88@gmail.com</p>
-<p>daneilvan05@gmail.com</p>
-<p>danielaung271099@gmail.com</p>
-
-<br>
-
-<p><strong>Phone</strong></p>
-<p>09785372681</p>
-<p>09251286186</p>
-<p>09785714661</p>
-
-<br>
-
-<p><strong>GitHub</strong></p>
-<p>
-https://github.com/khantzawlwin88-ops/student-portfolio
-</p>
+    <div class="stat">
+        <h2>UNIMY</h2>
+        <p>Computer Science</p>
+    </div>
 
 </div>
+        </div>
 
-</section>
+        <div class="hero-image">
 
-<footer>
+            <div class="glow-circle"></div>
 
-<p>
-© 2026 Student Portfolio | UNIMY Computer Science Students
-</p>
+            <div class="code-box">
 
-</footer>
+<pre>
+TEAM.PORTFOLIO
 
-<script src="script.js"></script>
+HTML5
+CSS3
+JavaScript
+Java
+C++
+Python
+
+Status :
+Building Future Developers...
+</pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ ABOUT ================-->
+
+    <section class="about section" id="about">
+
+        <h2 class="section-title">
+            About Our Team
+        </h2>
+
+        <div class="about-container">
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Who We Are</h3>
+
+                <p>
+
+                    We are first-year Computer Science students
+                    from the University of Malaysia Computer
+                    Science & Engineering (UNIMY).
+
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>What We Do</h3>
+
+                <p>
+
+                    We develop responsive websites,
+                    learn programming languages,
+                    and collaborate using Git & GitHub.
+
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>Our Goal</h3>
+
+                <p>
+
+                    To become professional software engineers
+                    by continuously improving our technical
+                    and teamwork skills.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!--================ EDUCATION ================-->
+
+    <section class="education section" id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>University of Malaysia Computer Science & Engineering (UNIMY)</h3>
+
+            <p>Major : Computer Science</p>
+
+            <p>Year : First-Year Student</p>
+
+        </div>
+
+    </section>
+
+    <!--================ SKILLS ================-->
+
+    <section class="skills section" id="skills">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ PROJECTS ================-->
+
+    <section class="projects section" id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-card">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>Student Portfolio Website</h3>
+
+            <p>
+
+                A responsive portfolio website developed using
+                HTML, CSS and JavaScript to showcase our team,
+                education, technical skills and projects.
+
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#" class="btn btn-primary">
+
+                    <i class="fa-solid fa-globe"></i>
+                    Live Demo
+
+                </a>
+
+                <a href="https://github.com/khantzawlwin88-ops/student-portfolio"
+                   target="_blank"
+                   class="btn btn-outline">
+
+                    <i class="fa-brands fa-github"></i>
+                    Source Code
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!--================ TEAM ================-->
+
+    <section class="team section" id="team">
+
+        <h2 class="section-title">Meet Our Team</h2>
+
+        <div class="team-container">
+
+            <!-- Member 1 -->
+            <div class="team-card">
+
+                <div class="team-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h3>KHANT ZAW LWIN</h3>
+
+                <p>First-Year Computer Science Student</p>
+
+                <div class="team-buttons">
+                    <a href="member/khantzaw.html" class="btn btn-primary">
+                        View Portfolio
+                    </a>
+
+                    <a href="https://github.com/khantzawlwin88-ops" target="_blank" class="btn btn-outline">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card">
+
+                <div class="team-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h3>DANIEL</h3>
+
+                <p>First-Year Computer Science Student</p>
+
+                <div class="team-buttons">
+                    <a href="member/daniel.html" class="btn btn-primary">
+                        View Portfolio
+                    </a>
+
+                    <a href="https://github.com/daneilvan05-rgb" target="_blank" class="btn btn-outline">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card">
+
+                <div class="team-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h3>S WIN MYAT AUNG</h3>
+
+                <p>First-Year Computer Science Student</p>
+
+                <div class="team-buttons">
+                    <a href="member/swinmyat.html" class="btn btn-primary">
+                        View Portfolio
+                    </a>
+
+                    <!-- GitHub Username ထည့်ပြီးရင် href ပြင်လိုက်ရုံ -->
+                    <a href="#" class="btn btn-outline">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ CONTACT ================-->
+
+    <section class="contact section" id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+
+                <p>khantzawlwin88@gmail.com</p>
+                <p>daneilvan05@gmail.com</p>
+                <p>danielaung271099@gmail.com</p>
+
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+
+                <p>09785372681</p>
+                <p>09251286186</p>
+                <p>09785714661</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ FOOTER ================-->
+
+    <footer class="footer">
+
+        <h2>Team Portfolio</h2>
+
+        <p>
+            First-Year Computer Science Students at UNIMY
+        </p>
+
+        <p class="copyright">
+            © 2026 Team Portfolio. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!--================ JAVASCRIPT ================-->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

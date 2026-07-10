@@ -1,91 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>S Win Myat Aung | Portfolio</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="member.css">
 </head>
 
 <body>
 
-<section class="hero">
+<div class="background">
+    <div class="grid"></div>
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+</div>
+
+<header class="hero">
+
+    <div class="profile-avatar">
+        <i class="fa-solid fa-user-graduate"></i>
+    </div>
+
     <h1>S WIN MYAT AUNG</h1>
-    <p>First-Year Computer Science Student</p>
-</section>
 
-<section>
-    <h2 class="title">About Me</h2>
+    <p class="hero-subtitle">
+        First-Year Computer Science Student
+    </p>
 
-    <div class="contact-box">
-        <p>
-            I am a first-year Computer Science student at the University of Malaysia Computer Science & Engineering (UNIMY). I am interested in software development and programming, and I enjoy learning new technologies through hands-on experience. I am committed to improving my coding skills, building practical applications, and expanding my knowledge in web development and software engineering.
-        </p>
-    </div>
-</section>
+    <div class="hero-buttons">
 
-<section>
-    <h2 class="title">Education</h2>
+        <a href="../index.html" class="btn btn-primary">
+            <i class="fa-solid fa-house"></i>
+            Back to Home
+        </a>
 
-    <div class="contact-box">
-        <p><strong>University:</strong> University of Malaysia Computer Science & Engineering (UNIMY)</p>
-        <p><strong>Major:</strong> Computer Science</p>
-        <p><strong>Year:</strong> First Year</p>
-    </div>
-</section>
-
-<section>
-    <h2 class="title">Skills</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>C++</h3>
-        </div>
-
-        <div class="card">
-            <h3>Java</h3>
-        </div>
-
-        <div class="card">
-            <h3>HTML</h3>
-        </div>
-
-        <div class="card">
-            <h3>Problem Solving</h3>
-        </div>
+        <a href="#" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
 
     </div>
+
+</header>
+
+<main class="container">
+
+<section class="card">
+
+<h2>
+<i class="fa-solid fa-user"></i>
+About Me
+</h2>
+
+<p>
+I am a first-year Computer Science student at the University of Malaysia Computer Science & Engineering (UNIMY). I am interested in software development and programming, and I enjoy learning new technologies through hands-on experience. I am committed to improving my coding skills, building practical applications, and expanding my knowledge in web development and software engineering.
+</p>
+
 </section>
 
-<section>
-    <h2 class="title">Project</h2>
+<section class="card">
 
-    <div class="contact-box">
-        <h3>Student Portfolio Website</h3>
+<h2>
+<i class="fa-solid fa-graduation-cap"></i>
+Education
+</h2>
 
-        <p>
-            Developed a responsive student portfolio website using HTML, CSS, and JavaScript. The project presents my academic background, technical skills, and personal information with a clean, modern, and user-friendly interface.
-        </p>
-    </div>
+<div class="info">
+
+<p><strong>University:</strong> University of Malaysia Computer Science & Engineering (UNIMY)</p>
+
+<p><strong>Major:</strong> Computer Science</p>
+
+<p><strong>Year:</strong> First Year</p>
+
+</div>
+
 </section>
 
-<section>
-    <h2 class="title">Contact</h2>
+<section class="card">
 
-    <div class="contact-box">
-        <p>📧 Email: danielaung271099@gmail.com</p>
-        <p>📱 Phone: 09785714661</p>
-    </div>
+<h2>
+<i class="fa-solid fa-code"></i>
+Skills
+</h2>
+
+<div class="skills">
+
+<div class="skill">C++</div>
+
+<div class="skill">Java</div>
+
+<div class="skill">HTML</div>
+
+<div class="skill">Problem Solving</div>
+
+</div>
+
 </section>
 
-<section style="text-align:center; margin-bottom:60px;">
-    <a href="../index.html" class="btn">⬅ Back to Home</a>
+<section class="card">
+
+<h2>
+<i class="fa-solid fa-laptop-code"></i>
+Project
+</h2>
+
+<h3>
+Student Portfolio Website
+</h3>
+
+<p>
+Developed a responsive student portfolio website using HTML, CSS, and JavaScript. The project presents my academic background, technical skills, and personal information with a clean, modern, and user-friendly interface.
+</p>
+
 </section>
 
-<footer>
-    <p>© 2026 Student Portfolio | S Win Myat Aung</p>
-</footer>
+<section class="card">
+
+<h2>
+<i class="fa-solid fa-address-book"></i>
+Contact
+</h2>
+
+<p>📧 Email: danielaung271099@gmail.com</p>
+
+<p>📱 Phone: 09785714661</p>
+
+</section>
+
+</main>
+
+<script src="member.js"></script>
 
 </body>
+
 </html>
